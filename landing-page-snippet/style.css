@@ -24,6 +24,11 @@ section {
     margin: auto;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 div.nav {
     display: flex;
     justify-content: space-between;

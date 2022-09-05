@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --cor1: hsl(257, 40%, 49%);
+    --cor2: hsl(300, 69%, 71%);
+
+    --fonte-padrão: 'Open Sans', sans-serif;
+    --fonte-destaque: 'Poppins', sans-serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--cor1);
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    padding: 3rem;
+}
+
+.img-logo {
+    width: 13%;
+    margin: 0 0 0 1rem;
+}
+
+main {
+    display: flex;
+}
+
+.main-esquerda {
+    width: 50%;
+}
+
+img#img-esquerda{
+    width: 85%;
+    margin-left: 3rem;
+}
+
+.main-direita {
+    width: 50%;
+}
+
+h1 {
+    font-family: var(--fonte-destaque);
+    color: white;
+    width: 70%;
+    margin: 2.5rem 0 0 0;
+}
+
+p {
+    color: white;
+    font-family: var(--fonte-padrão);
+    width: 75%;
+    line-height: 1.7rem;
+    margin: 1rem 0 0 0;
+}
+
+button {
+    font-family: var(--fonte-padrão);
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    border: none;
+    color: var(--cor1);
+    font-weight: bold;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.400);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+section {
+    margin-top: 2rem;
+}
+
+.div-section ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.div-section ul li {
+    list-style-type: none;
+}
+
+.img-section {
+    width: 2rem;
+    margin: 0 1rem 0rem 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    img#img-esquerda {
+       width: 80%;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    .img-section {
+        width: 1.5rem;
+    }
+
+    .img-logo {
+        width: 17%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        background-image: url(images/bg-mobile.svg);
+    }
+
+    .img-logo {
+        width: 40%;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+
+    .main-esquerda {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    img#img-esquerda {
+        margin-left: 0rem;
+        width: 80%;
+    }
+
+    .main-direita {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 6vw;
+        padding: 0 2.5rem 0 2.5rem;
+    }
+
+    p {
+        width: 100%;
+        font-size: 4.2vw;
+        padding: 0 1.5rem 0 1.5rem;
+    }
+
+    button {
+        padding: 1rem 4rem 1rem 4rem;
+        border-radius: 100px;
+        margin-bottom: 2rem;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
+}

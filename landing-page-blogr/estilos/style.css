@@ -163,7 +163,21 @@ header > .header-left > div > nav > ul > li {
 
 main {
     font-family: var(--font-secundaria-Ubuntu);
+    line-height: 1.5rem;
 }
+
+h2 {
+    color: var(--CP-VeryDarkBlue);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+p {
+    font-weight: normal;
+    color: var(--CN-VeryDarkGrayishBlue);
+}
+
 
 /* Segunda section */
 .section-two {
@@ -179,20 +193,9 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 600px;
+    height: 700px;
 }
 
-.section-two-left > div > h2 {
-    color: var(--CP-VeryDarkBlue);
-    font-weight: bold;
-    margin-bottom: 2rem;
-    margin-top: 5rem;
-}
-
-.section-two-left > div > p {
-    font-weight: normal;
-    color: var(--CN-VeryDarkGrayishBlue);
-}
 
 .h1-section-two {
     font-weight: normal;
@@ -220,3 +223,108 @@ main {
     object-fit: cover;
     object-position: 12rem;
 }
+
+/* Terceira section */
+.section-three {
+    background-image: linear-gradient(to right, #2c2d3f 20%, #3f4164);
+    border-radius: 0 5rem 0 5rem;
+}
+
+.div-section-three {
+    display: flex;
+    width: 100%;
+    height: 280px;
+    margin-top: 4rem;
+    background-image: url(../images/bg-pattern-circles.svg);
+    -webkit-mask-image: linear-gradient(to left, transparent);
+    background-repeat: no-repeat;
+    background-position: -3rem bottom;
+    background-size: 850px;
+    border-radius: 0 5rem 0 5rem;
+}
+
+.div-img-phone {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-left: 10%;
+}
+
+.img-phone {
+    position: absolute;
+    height: 400px;
+    margin-top: 1rem;
+}
+
+.div-h1-span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-right: 10%;
+}
+
+.div-h1-span > h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.div-h1-span > span {
+    color: rgba(255, 255, 255, 0.747);
+    line-height: 1.5rem;
+    font-weight: normal;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Quarta section */
+.section-four {
+    display: flex;
+    margin-top: 5rem;
+    width: 100%;
+    height: 700px;
+}
+
+.section-left {
+    width: 50%;
+}
+
+#img-section-four {
+    position: absolute;
+    width: 60vw;
+    object-fit: cover;
+    object-position: -14.5rem;
+}
+
+.section-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 0rem 10rem;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    background-color: var(--CN-VeryDarkBlackBlue);
+    padding: 3rem;
+}
+
+footer > .rodape > div > nav > ul > li  {
+    list-style-type:  none;
+}
+
+footer > .rodape > div > nav > ul > li > a {
+    text-decoration: none;
+    
+}
+
+.rodape {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+

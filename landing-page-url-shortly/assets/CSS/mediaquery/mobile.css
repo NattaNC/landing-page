@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 400px) {
+
+    /* Cabeçalho */
+    div.menu-mobile {
+        display: block;
+    }
+
+    header menu, div.buttons {
+        display: none;
+    }
+
+    /* Seção introdução */
+    section.introduction {
+        flex-direction: column-reverse;
+    }
+
+    section.introduction div.left, section.introduction div.rigth{
+        width: 100%;
+    }
+
+    section.introduction img {
+        width: 20rem;
+        padding: -10%;
+        position: relative;
+        left: 0;
+        object-position: 1rem;
+    }
+
+    /* Conteudo */
+    div.cardsContent {
+        flex-direction: column;
+    }
+
+    div.card {
+        width: 100%;
+    }
+
+    /* Rodapé  */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}

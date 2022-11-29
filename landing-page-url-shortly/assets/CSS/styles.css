@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+:root {
+    /* ### Primary */
+    --cyan: hsl(180, 66%, 49%);
+    --DarkViolet: hsl(257, 27%, 26%);
+
+    /* ### Secondary */
+
+    --Red: hsl(0, 87%, 67%);
+
+    /* ### Neutral */
+
+    --LightGray: hsl(0, 0%, 83%);
+    --Gray: hsl(0, 0%, 75%);
+    --GrayishViolet: hsl(257, 7%, 63%);
+    --VeryDarkBlue: hsl(255, 11%, 22%);
+    --VeryDarkViolet: hsl(260, 8%, 14%);
+
+    --FontPoppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: var(--FontPoppins);
+    background-color: #FFF;
+}
+
+header, section.introduction, section.content, section.finaly, footer {
+    padding: 0 10%;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div, header div > menu > ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header div > menu > ul > li {
+    margin-left: 2rem;
+}
+
+header div menu ul li a {
+    text-decoration: none;
+    color: var(--Gray);
+    font-weight: 700;
+}
+
+div.menu-mobile {
+    display: none;
+}
+
+button#login {
+    background-color: #FFF;
+    color: var(--Gray);
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+button#SignUp {
+    background-color: var(--cyan);
+    border: none;
+    padding: .8rem 1.5rem;
+    border-radius: 2rem;
+    color: #FFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Section introdução */
+section.introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+button.GetStarted {
+    background-color: var(--cyan);
+    border: none;
+    padding: 1rem 2rem;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+section.introduction div.left, section.introduction div.rigth {
+    width: 50%;
+}
+
+section.introduction h1 {
+    font-size: 5rem;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 1rem;
+    line-height: 5.5rem;
+}
+
+section.introduction p {
+    color: var(--Gray);
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+section.introduction img {
+    width: 100%;
+    position: relative;
+    left: 25%;
+}
+
+/* Section Conteudo */
+div.inputGenerate {
+    background-color: var(--DarkViolet);
+    background-image: url('../images/bg-shorten-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    border-radius: .5rem;
+    position: relative;
+    bottom: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+div.inputGenerate form {
+    width: 80%;
+}
+
+form > input {
+    width: 100%;
+    border-radius: .5rem;
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+}
+
+#btn-input {
+    background-color: var(--cyan);
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+section.content {
+    background-color: hsl(0, 0%, 97%);
+    padding-bottom: 10rem;
+}
+
+section.content h2, section.content p {
+    text-align: center;
+}
+
+section.content h2 {
+    color: var(--VeryDarkBlue);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+section.content p {
+    margin-bottom: 6rem;
+    color: var(--Gray);
+    font-size: 1.1rem;
+}
+
+div.img-card {
+    background-color: var(--DarkViolet);
+    position: relative;
+    bottom: 3.5rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+div.img-card > img {
+    height: 2.5rem;
+}
+
+div.cardsContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.cardsContent div.card div.contentCard > h3 {
+    color: var(--VeryDarkViolet);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+div.cardsContent div.card div.contentCard > span {
+    color: var(--Gray);
+    line-height: 1.5rem;
+}
+
+
+div.card {
+    width: 30%;
+    background-color: #FFF;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+#detailed {
+    position: relative;
+    top: 3rem;
+}
+
+#customizable {
+    position: relative;
+    top: 5rem;
+}
+
+.line {
+    height: 10px;
+    width: 3rem;
+    background-color: var(--cyan);
+}
+
+div.contentCard {
+    position: relative;
+    bottom: 1rem;
+}
+
+/* Section final */
+section.finaly {
+    background-color: var(--DarkViolet);
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0 ;
+}
+
+section.finaly h2 {
+    color: #FFF;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+footer div img#logo-white {
+    margin-right: 10rem;
+}
+
+footer div h4 {
+    color: #FFF;
+    margin-bottom: 2rem;
+}
+
+footer div ul {
+    list-style-type: none;
+}
+
+footer div ul li {
+    margin-top: .5rem;
+}
+
+footer div ul li > a {
+    text-decoration: none;
+    color: var(--Gray);
+}
+
+footer div.socialMedia ul {
+    display: flex;
+}
+
+footer div.socialMedia ul li {
+    margin-left: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,9 +2,18 @@
 
 @media only screen and (max-width: 400px) {
 
+    header, section.introduction, section.content, section.finaly, footer {
+        padding: 0 5%;
+    }
+
     /* Cabeçalho */
     div.menu-mobile {
         display: block;
+        color: gray;
+    }
+
+    div.menu-mobile span.material-symbols-outlined {
+        font-size: 2rem;
     }
 
     header menu, div.buttons {
@@ -14,6 +23,7 @@
     /* Seção introdução */
     section.introduction {
         flex-direction: column-reverse;
+        overflow: hidden;
     }
 
     section.introduction div.left, section.introduction div.rigth{
@@ -21,8 +31,7 @@
     }
 
     section.introduction img {
-        width: 20rem;
-        padding: -10%;
+        width: 30rem;
         position: relative;
         left: 0;
         object-position: 1rem;

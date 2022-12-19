@@ -28,6 +28,12 @@
     box-sizing: border-box;
 }
 
+/* PopUp */
+
+div.PopUp {
+    display: none;
+}
+
 body {
     width: 100%;
     font-family: var(--FontPoppins);
@@ -95,6 +101,7 @@ section.introduction {
     align-items: center;
     margin-bottom: 5rem;
     width: 100%;
+    overflow: hidden;
 }
 
 button.GetStarted {

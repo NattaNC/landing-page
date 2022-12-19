@@ -1,23 +1,47 @@
 @charset "UTF-8";
 
 @media only screen and (max-width: 400px) {
+    section.introduction img {
+        width: 30rem;
+        position: static;
+        left: 0;
+        object-position: 1rem;
+    }
+
+    div.PopUp {
+        position: absolute;
+        display: none;
+        background-color: aqua;
+        width: 80%;
+        margin: 0rem 10% 0rem 10%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 800px) {
 
     header, section.introduction, section.content, section.finaly, footer {
         padding: 0 5%;
     }
 
-    /* Cabeçalho */
     div.menu-mobile {
         display: block;
         color: gray;
     }
 
-    div.menu-mobile span.material-symbols-outlined {
-        font-size: 2rem;
-    }
-
     header menu, div.buttons {
         display: none;
+    }
+
+    /* Cabeçalho */
+
+    div.menu-mobile span.material-symbols-outlined {
+        font-size: 2rem;
     }
 
     /* Seção introdução */
@@ -25,30 +49,162 @@
         flex-direction: column-reverse;
         overflow: hidden;
     }
-
-    section.introduction div.left, section.introduction div.rigth{
-        width: 100%;
+    
+    section.introduction div.left, section.introduction div.right{
+        width: 100%;        
     }
 
-    section.introduction img {
-        width: 30rem;
-        position: relative;
-        left: 0;
-        object-position: 1rem;
+    section.introduction div.left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    section.introduction div.left > h1 {
+        font-size: 2.5rem ;
+        text-align: center;
+        line-height: 2.9rem;
+    }
+
+    section.introduction div.left > p {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.7rem;
+    }
+
+    section.introduction div.left > button {
+        padding: .8rem 2rem;
+        font-weight: normal;
     }
 
     /* Conteudo */
+
+    section.content div.inputGenerate {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    section.content div.inputGenerate > form {
+        width: 100%;
+    }    
+
+    section.content div.inputGenerate > form > input {
+        padding: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    input::placeholder {
+        color: rgba(128, 128, 128, 0.514);
+        font-weight: bold;
+    }
+
+    section.content div.inputGenerate > button#btn-input  {
+        padding: .8rem;
+    }
+
+    section.content div.inputGenerate > button {
+        width: 100%;
+    }
+    
+    section.content h2 {
+        font-size: 1.7rem;
+    }
+
+    section.content p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    section.content p br {
+        display: none;
+    }
+
     div.cardsContent {
         flex-direction: column;
     }
 
     div.card {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    div#detailed, div#customizable {
+        position: relative;
+        top: 0;
+    }
+
+    div.line {
+        display: none;
+    }
+
+
+    /* Section Final */
+    section.finaly {
+        padding: 4rem 5%;
+    }
+
+    section.finaly h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    section.finaly button {
+        font-size: 1rem;
     }
 
     /* Rodapé  */
     footer {
         flex-direction: column;
         align-items: center;
+        padding: 4rem 0;
+    }
+
+    footer div h4 {
+        margin-bottom: .5rem;
+    }
+
+    footer div.div-logo {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    footer div img#logo-white {
+        margin: 0;
+    }
+
+    footer div.Features, div.Resources, div.Company {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    footer div.socialMedia {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    footer div.socialMedia > ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0rem 10%;
+    }
+
+    footer div.socialMedia > ul > li {
+        margin: 0;
     }
 }

@@ -4,8 +4,8 @@
 
 :root {
     /* ### Primary */
-    --cyan: hsl(180, 66%, 49%);
-    --DarkViolet: hsl(257, 27%, 26%);
+    --cyan: #2acfcf;
+    --DarkViolet: #3b3054;
 
     /* ### Secondary */
 
@@ -163,6 +163,7 @@ form > input {
     border-radius: .5rem;
     font-size: 1rem;
     padding: 1rem 2.5rem;
+    border: none;
 }
 
 #btn-input {
@@ -174,6 +175,59 @@ form > input {
     padding: 1rem 2.5rem;
     border-radius: .5rem;
     cursor: pointer;
+}
+
+/*Card generate*/
+div#card-generate {
+    display: none;
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-top: -5rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+div#card-generate h4#link, hr, h4#link-encurtado {
+    margin-bottom: 1rem;
+}
+
+div#card-generate h4#link {
+    font-weight: normal;
+}
+
+div#card-generate hr {
+    opacity: .2;
+    width: 100%;
+}
+
+div#card-generate h4#link-encurtado {
+    font-weight: normal;
+    color: #2acfcf;
+}
+
+div#card-generate button {
+    width: 100%;
+    background-color: #2acfcf;
+    border: none;
+    color: #FFFFFF;
+    padding: .8rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: .5rem;
+}
+
+div#invalid {
+    color: rgb(238, 29, 29);
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 section.content {

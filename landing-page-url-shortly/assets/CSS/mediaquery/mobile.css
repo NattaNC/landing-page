@@ -1,29 +1,85 @@
 @charset "UTF-8";
 
 @media only screen and (max-width: 400px) {
+    header {
+        height: 6rem;
+    }
+
     section.introduction img {
         width: 30rem;
         position: static;
         left: 0;
         object-position: 1rem;
     }
-
-    div.PopUp {
-        position: absolute;
-        display: none;
-        background-color: aqua;
-        width: 80%;
-        margin: 0rem 10% 0rem 10%;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 5rem;
-    }
-
-
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
+    header {
+        height: 6rem;
+    }
+
+    section.introduction img {
+        position: static;
+    }
+
+    div.PopUp {
+        width: 80%;
+        position: absolute;
+        display: none;
+        background-color: #3b3054;
+        margin: 0rem 10% 0rem 10%;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 5rem;
+        padding: 2rem 0;
+        border-radius: 1rem;
+    }   
+
+    div hr.linepopup {
+        width: 80%;
+        opacity: .1;
+        margin-bottom: 2rem;
+    }
+
+    div div.buttonsMobile {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    div button#loginMobile {
+        background-color: #3b3054;
+        border: none;
+        color: #FFFFFF;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+
+    div button#SignUpMobile {
+        width: 80%;
+        background-color: #2acfcf;
+        color: #FFFFFF;
+        font-weight: bold;
+        border: none;
+        border-radius: 10rem;
+        padding: .8rem 0;
+        font-size: 1rem;
+    }
+
+    menu ul li {
+        list-style-type: none;
+        margin-bottom: 2rem;
+    }
+
+    menu ul li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
 
     header, section.introduction, section.content, section.finaly, footer {
         padding: 0 5%;

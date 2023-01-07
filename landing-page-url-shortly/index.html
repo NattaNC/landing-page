@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/CSS/styles.css">
     <link rel="stylesheet" href="assets/CSS/mediaquery/mobile.css">
     <title>Shortly</title>
 </head>
 <body>
-    <div class="PopUp">
+    <div class="PopUp" id="PopUp">
         <menu>
             <ul>
-                <li><a href="#">Features</a></li>
+                <li><a href="#" class="menu-link features">Features</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Resources</a></li>
             </ul>
         </menu>
+        <hr class="linepopup">
         <div class="buttonsMobile">
             <button id="loginMobile">Login</button>
             <button id="SignUpMobile">Sign Up</button>
@@ -39,7 +41,7 @@
             <button id="login">Login</button>
             <button id="SignUp">Sign Up</button>
         </div>
-        <div class="menu-mobile">
+        <div class="menu-mobile" id="hamburger">
             <span class="material-symbols-outlined">
                 menu
             </span>
@@ -65,7 +67,20 @@
             <form>
                 <input type="text" id="EncurtarLink" placeholder="Shorten a link here..." required>
             </form>
+            <div id="invalid">
+                
+            </div>
             <button type="submit" value="submit" id='btn-input'>Shorten It!</button>
+        </div>
+        <div id="card-generate">
+            <h4 id="link">
+                https://www.frontendmentor.io
+            </h4>
+            <hr>
+            <h4 id="link-encurtado">
+                https://rel.ink/gxOXp9
+            </h4>
+            <button>Copy</button>
         </div>
         <h2>
             Advanced Statistics

@@ -17,7 +17,7 @@
     --Gray: hsl(0, 0%, 75%);
     --GrayishViolet: hsl(257, 7%, 63%);
     --VeryDarkBlue: hsl(255, 11%, 22%);
-    --VeryDarkViolet: hsl(260, 8%, 14%);
+    --VeryDarkViolet: #232127;
 
     --FontPoppins: 'Poppins', sans-serif;
 }
@@ -154,8 +154,12 @@ div.inputGenerate {
     margin-bottom: 2rem;
 }
 
+div.inputGenerate div.formInvalid {
+    width: 100%;
+}
+
 div.inputGenerate form {
-    width: 80%;
+    width: 95%;
 }
 
 form > input {
@@ -170,16 +174,30 @@ form > input {
     background-color: var(--cyan);
     color: #FFF;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: none;
     padding: 1rem 2.5rem;
     border-radius: .5rem;
     cursor: pointer;
+    width: 25vw;
 }
 
+
+
+
+
+
+
+
 /*Card generate*/
-div#card-generate {
+div#display {
     display: none;
+}
+
+div#card-generate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #FFFFFF;
     width: 100%;
     margin-top: -5rem;
@@ -188,15 +206,12 @@ div#card-generate {
     margin-bottom: 2rem;
 }
 
-div#card-generate h4#link, hr, h4#link-encurtado {
-    margin-bottom: 1rem;
-}
-
 div#card-generate h4#link {
     font-weight: normal;
 }
 
 div#card-generate hr {
+    display: none;
     opacity: .2;
     width: 100%;
 }
@@ -206,21 +221,37 @@ div#card-generate h4#link-encurtado {
     color: #2acfcf;
 }
 
+div#card-generate button#copied:hover {
+    background-color: #232127;
+    cursor: pointer;
+}
+
+div.linkEbutton {
+    display: flex;
+    align-items: center;
+}
+
 div#card-generate button {
-    width: 100%;
     background-color: #2acfcf;
     border: none;
     color: #FFFFFF;
-    padding: .8rem 0;
+    padding: 1rem 2rem;
     font-size: 1rem;
     font-weight: bold;
     border-radius: .5rem;
+    margin-left: 2rem;
 }
 
+
+
+
+
+
+
+
+
 div#invalid {
-    color: rgb(238, 29, 29);
-    margin-top: -1rem;
-    margin-bottom: 1rem;
+    color: #ee1d1d;
     display: flex;
     align-items: end;
     justify-content: flex-end;
@@ -228,6 +259,7 @@ div#invalid {
     width: 100%;
     font-size: 1rem;
     font-weight: normal;
+    position: absolute;
 }
 
 section.content {

@@ -135,6 +135,60 @@
         font-weight: normal;
     }
 
+    /*Card generate*/
+    div#card-generate {
+        display: block;
+        background-color: #FFFFFF;
+        width: 100%;
+        margin-top: -5rem;
+        padding: 1rem;
+        border-radius: .5rem;
+        margin-bottom: 2rem;
+    }
+
+    div#card-generate h4#link, hr, h4#link-encurtado {
+        margin-bottom: 1rem;
+    }
+
+    div#card-generate h4#link {
+        font-weight: normal;
+    }
+
+    div#card-generate hr {
+        display: block;
+        opacity: .2;
+        width: 100%;
+    }
+
+    div#card-generate h4#link-encurtado {
+        font-weight: normal;
+        color: #2acfcf;
+    }
+
+    div#card-generate button#copied:hover {
+        background-color: #232127;
+        cursor: pointer;
+    }
+
+    div.linkEbutton {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    div#card-generate button {
+        width: 100%;
+        background-color: #2acfcf;
+        border: none;
+        color: #FFFFFF;
+        padding: .8rem 0;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: .5rem;
+        margin-left: 0;
+    }
+
+
     /* Conteudo */
 
     section.content div.inputGenerate {
@@ -144,9 +198,14 @@
         padding: 1rem;
     }
 
-    section.content div.inputGenerate > form {
+    section.content div.inputGenerate form, div.formInvalid {
         width: 100%;
-    }    
+    }
+
+    section.content div.inputGenerate div#invalid {
+        position: sticky;
+        margin-bottom: .5rem;
+    }
 
     section.content div.inputGenerate > form > input {
         padding: .8rem;
@@ -159,6 +218,7 @@
     }
 
     section.content div.inputGenerate > button#btn-input  {
+        width: 100%;
         padding: .8rem;
     }
 

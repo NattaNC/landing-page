@@ -64,23 +64,29 @@
     </section>
     <section class="content">
         <div class="inputGenerate">
-            <form>
-                <input type="text" id="EncurtarLink" placeholder="Shorten a link here..." required>
-            </form>
-            <div id="invalid">
+            <div class="formInvalid">
+                <form>
+                    <input type="text" id="EncurtarLink" placeholder="Shorten a link here..." required>
+                </form>
+                <div id="invalid">
                 
+                </div>
             </div>
             <button type="submit" value="submit" id='btn-input'>Shorten It!</button>
         </div>
-        <div id="card-generate">
-            <h4 id="link">
-                https://www.frontendmentor.io
-            </h4>
-            <hr>
-            <h4 id="link-encurtado">
-                https://rel.ink/gxOXp9
-            </h4>
-            <button>Copy</button>
+        <div id="display">
+            <div id="card-generate">
+                <h4 id="link">
+            
+                </h4>
+                <hr>
+                <div class="linkEbutton">
+                    <h4 id="link-encurtado">
+            
+                    </h4>
+                    <button id="copied">Copy</button>
+                </div>
+            </div>
         </div>
         <h2>
             Advanced Statistics
